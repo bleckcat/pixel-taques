@@ -15,7 +15,7 @@ const ProfileBar = () => {
         width={92}
         height={92}
         alt="profile bar"
-        className="absolute top-0 left-[52px] transition-all duration-300 cursor-pointer hover:contrast-125 hover:brightness-150"
+        className="absolute top-0 left-[52px] transition-all duration-300 cursor-pointer hover:contrast-125 hover:brightness-150 drop-shadow-button"
       />
       <h2 className="absolute top-[58px] left-[228px] text-2xl">
         Not logged in

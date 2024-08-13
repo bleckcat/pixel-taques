@@ -8,7 +8,13 @@ const NavBarOptions = () => {
   const { setUiSize } = useContext(ConfigContext);
   return (
     <div className="relative w-fit">
-      <Image height={256} width={256} src="img/main-menu.svg" alt="test" />
+      <Image
+        height={256}
+        width={256}
+        src="img/main-menu.svg"
+        alt="test"
+        className="drop-shadow-2xl"
+      />
       <div className={`absolute left-[88px] top-[38px] w-[80px] h-[80px]`}>
         <NavButton
           src="img/profile.svg"

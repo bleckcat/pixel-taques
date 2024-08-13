@@ -12,6 +12,14 @@ const config: Config = {
         "chat-box": "url('/img/chat-box.svg')",
         profile: "url('/img/profile.svg')",
       },
+      backgroundColor: {
+        "health-bar": "#ac3232",
+      },
+      dropShadow: {
+        text: "0 1.2px 1.2px rgba(0,0,0,0.9)",
+        button: "0 1.2px 1.2px rgba(0,0,0,0.8)",
+        hovers: "0 2px 2px rgba(0,0,0,0.9)",
+      },
       animation: {
         breathing: "breathing 3s ease-in-out infinite normal",
         "breathing-transition": "breathing-transition 1s ease-out normal",

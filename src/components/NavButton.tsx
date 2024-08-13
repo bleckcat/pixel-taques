@@ -29,8 +29,8 @@ const NavButton = ({ src, alt, onClick }: NavButtonProps) => {
         src={src}
         className={
           hovered
-            ? "saturate-200 brightness-150"
-            : "transition-all duration-300"
+            ? "saturate-200 brightness-150 drop-shadow-hovers"
+            : "transition-all duration-300 drop-shadow-button"
         }
         alt={alt}
       />
