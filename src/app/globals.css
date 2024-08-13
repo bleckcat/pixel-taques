@@ -1,7 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-slate-950;
+}
+
 * {
+  font-family: "Pixelify Sans", sans-serif;
+  color: white;
+  font-optical-sizing: auto;
+  font-style: normal;
+  pointer-events: visiblePainted;
   image-rendering: pixelated;
+}
+
+img {
+  will-change: transform;
 }

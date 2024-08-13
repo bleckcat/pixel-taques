@@ -9,9 +9,35 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "chat-box": "url('/img/chat-box.svg')",
+        profile: "url('/img/profile.svg')",
+      },
+      animation: {
+        breathing: "breathing 3s ease-in-out infinite normal",
+        "breathing-transition": "breathing-transition 1s ease-out normal",
+      },
+      keyframes: {
+        "breathing-transition": {
+          "0%": { transform: "scale(1.05)" },
+          "100%": { transform: "scale(1)" },
+        },
+        breathing: {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "25%": {
+            transform: "scale(1.05)",
+          },
+          "60%": {
+            transform: "scale(1)",
+          },
+          "80%": {
+            transform: "scale(1.05)",
+          },
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
       },
     },
   },
