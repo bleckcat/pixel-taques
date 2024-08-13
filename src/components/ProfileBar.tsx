@@ -6,11 +6,20 @@ const ProfileBar = () => {
     <div className="mb-4 -ml-16 relative">
       <Image
         src="img/profile-bar.svg"
-        width={4 * 178}
-        height={4 * 25}
+        width={712}
+        height={100}
         alt="profile bar"
       />
-      <h2 className="absolute top-[32px]">Not logged in</h2>
+      <Image
+        src="img/no-profile-picture.svg"
+        width={92}
+        height={92}
+        alt="profile bar"
+        className="absolute top-0 left-[52px] transition-all duration-300 cursor-pointer hover:contrast-125 hover:brightness-150"
+      />
+      <h2 className="absolute top-[58px] left-[228px] text-2xl">
+        Not logged in
+      </h2>
     </div>
   );
 };

@@ -27,7 +27,11 @@ const NavButton = ({ src, alt, onClick }: NavButtonProps) => {
         height={256}
         width={256}
         src={src}
-        className={hovered ? "saturate-200" : "transition-all duration-300"}
+        className={
+          hovered
+            ? "saturate-200 brightness-150"
+            : "transition-all duration-300"
+        }
         alt={alt}
       />
     </div>
