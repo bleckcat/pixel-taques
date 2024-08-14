@@ -1,5 +1,5 @@
 "use client";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/Header/NavBar";
 import { UiSizes } from "@/configuration/ui";
 import { ConfigContext } from "@/context/configurations";
 import { useState } from "react";
