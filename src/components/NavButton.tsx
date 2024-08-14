@@ -7,9 +7,15 @@ interface NavButtonProps {
   src: string;
   alt: string;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
+  customHoverClasses?: React.ComponentProps<"div">["className"];
 }
 
-const NavButton = ({ src, alt, onClick }: NavButtonProps) => {
+const NavButton = ({
+  src,
+  alt,
+  onClick,
+  customHoverClasses,
+}: NavButtonProps) => {
   const [hovered, setHovered] = useState(false);
   return (
     <div className="relative">
@@ -29,8 +35,9 @@ const NavButton = ({ src, alt, onClick }: NavButtonProps) => {
         src={src}
         className={
           hovered
-            ? "saturate-200 brightness-150 drop-shadow-hovers"
-            : "transition-all duration-300 drop-shadow-button"
+            ? "saturate-200 brightness-150 transition-all duration-500 " +
+              customHoverClasses
+            : "transition-all duration-500"
         }
         alt={alt}
       />

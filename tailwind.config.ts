@@ -19,6 +19,11 @@ const config: Config = {
         text: "0 1.2px 1.2px rgba(0,0,0,0.9)",
         button: "0 1.2px 1.2px rgba(0,0,0,0.8)",
         hovers: "0 2px 2px rgba(0,0,0,0.9)",
+        "green-glow": "0px 0px 26px #99e550",
+        "blue-glow": "0px 0px 26px #639bff",
+        "grey-glow": "0px 0px 26px #9badb7",
+        "yellow-glow": "0px 0px 26px #ffe144",
+        "dark-blue-glow": "0px 0px 26px #3f3f74",
       },
       animation: {
         breathing: "breathing 3s ease-in-out infinite normal",

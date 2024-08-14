@@ -22,6 +22,7 @@ const NavBarOptions = () => {
           onClick={() => {
             console.log("I miss the rage");
           }}
+          customHoverClasses="drop-shadow-yellow-glow"
         />
       </div>
       <div className="absolute left-[38px] top-[88px] w-[80px] h-[80px]">
@@ -31,6 +32,7 @@ const NavBarOptions = () => {
           onClick={() => {
             setUiSize!(UiSizes.MEDIUM);
           }}
+          customHoverClasses="drop-shadow-blue-glow"
         />
       </div>
       <div className="absolute right-[38px] bottom-[88px] w-[80px] h-[80px]">
@@ -40,6 +42,7 @@ const NavBarOptions = () => {
           onClick={() => {
             setUiSize!(UiSizes.LARGE);
           }}
+          customHoverClasses="drop-shadow-grey-glow"
         />
       </div>
       <div className="absolute right-[88px] bottom-[38px] w-[80px] h-[80px]">
@@ -49,6 +52,7 @@ const NavBarOptions = () => {
           onClick={() => {
             console.log("I miss the rage");
           }}
+          customHoverClasses="drop-shadow-green-glow"
         />
       </div>
     </div>
