@@ -1,3 +1,4 @@
+"use client";
 import { UiSizes } from "@/configuration/ui";
 import { createContext, Dispatch, SetStateAction } from "react";
 
@@ -7,5 +8,5 @@ interface ConfigProps {
 }
 
 export const ConfigContext = createContext<ConfigProps>({
-  uiSize: UiSizes.MEDIUM,
+  uiSize: UiSizes.SMALL,
 });

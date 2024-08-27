@@ -1,10 +1,11 @@
 "use client";
-import NavBar from "@/components/Header/NavBar";
 import { ModalStatus } from "@/configuration/modal";
 import { UiSizes } from "@/configuration/ui";
 import { ConfigContext } from "@/context/configurations";
 import { ModalContext } from "@/context/modals";
 import { useState } from "react";
+import SkillTree from "@/components/Sections/SkillTree";
+import NavBar from "@/components/Header/NavBar";
 
 export default function Home() {
   const [config, setConfig] = useState<UiSizes>(UiSizes.MEDIUM);
@@ -24,6 +25,11 @@ export default function Home() {
         }}
       >
         <NavBar />
+        <main className="grid grid-cols-12 mx-auto sm:max-w-[480px] md:max-w-[720px] xl:max-w-[1200px] sm:gap-y-4 md:gap-y-8 xl:gap-y-16">
+          <SkillTree />
+        </main>
+
+        {/* <ModalContainer /> */}
       </ModalContext.Provider>
     </ConfigContext.Provider>
   );
