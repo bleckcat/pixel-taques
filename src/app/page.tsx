@@ -25,7 +25,7 @@ export default function Home() {
         }}
       >
         <NavBar />
-        <main className="grid grid-cols-12 mx-auto sm:max-w-[480px] md:max-w-[720px] xl:max-w-[1200px] sm:gap-y-4 md:gap-y-8 xl:gap-y-16">
+        <main className="mx-auto sm:max-w-[480px] md:max-w-[720px] xl:max-w-[1200px] sm:pt-[32px] md:[64px] xl:pt-[180px]">
           <SkillTree />
         </main>
 

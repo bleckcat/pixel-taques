@@ -11,7 +11,9 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`fixed flex m-4 origin-top-left ` + tailwindUiSizes[uiSize]}
+      className={
+        `fixed z-50 flex m-4 origin-top-left ` + tailwindUiSizes[uiSize]
+      }
     >
       <NavBarOptions />
       <div>

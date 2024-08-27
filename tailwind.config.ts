@@ -11,10 +11,12 @@ const config: Config = {
       backgroundImage: {
         "chat-box": "url('/img/chat-box.svg')",
         modal: "url('/img/modal.svg')",
+        card: "url('/img/card.svg')",
         profile: "url('/img/profile.svg')",
       },
       backgroundColor: {
         "health-bar": "#ac3232",
+        "java-script": "#f0db4f",
       },
       dropShadow: {
         text: "0 1.2px 1.2px rgba(0,0,0,0.9)",
